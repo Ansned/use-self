@@ -1,0 +1,12 @@
+#!name=京东购物助手
+#!desc=进入商品详情页触发，支持京东、京喜和极速版京粉转链、慢慢买和什么值得买
+#!icon=https://raw.githubusercontent.com/Ansned/private/main/icons/price.png
+
+
+[Script]
+http-response ^https:\/\/in\.m\.jd\.com\/product\/.+?\.html script-path=https://raw.githubusercontent.com/Ansned/Scripts/main/scripts/jd_buy_helper.js,requires-body=true, timeout=10, tag=京东助手
+http-response ^https:\/\/wqs\.jd\.com\/wxsq_item_search\/item\/jxapp_detail\/index\.shtml script-path=https://raw.githubusercontent.com/Ansned/Scripts/main/scripts/jd_buy_helper.js,requires-body=true, timeout=10, tag=惊喜助手
+http-response ^https:\/\/lite-in\.m\.jd\.com\/product\/detail\/sequ\/\d+.html script-path=https://raw.githubusercontent.com/Ansned/Scripts/main/scripts/jd_buy_helper.js,requires-body=true, timeout=10, tag=极速助手
+
+[MITM]
+hostname = in.m.jd.com, wqs.jd.com, lite-in.m.jd.com
