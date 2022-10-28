@@ -1,6 +1,6 @@
 
 /***
-灵感足迹高级解锁--Eric
+Draft解锁--Ansned
 
 [rewrite_local]
 ^https://backend.getdrafts.com/api/v1/verification/verify_receipt url script-response-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Drafts.js
