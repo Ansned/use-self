@@ -17,7 +17,7 @@ TG频道群：https://t.me/py996
 
 [rewrite_local]
 
-^https?://* url script-request-header https://raw.githubusercontent.com/89996462/Quantumult-X/main/gx/bilibili.js
+^https?://* url script-request-header https://raw.githubusercontent.com/Ansned/use-self/main/Script/Bili.js
 
 [mitm] 
 
