@@ -16,13 +16,17 @@ TG频道群：https://t.me/py996
 *******************************
 
 [rewrite_local]
-
-^https?://* url script-request-header https://raw.githubusercontent.com/Ansned/use-self/main/Script/Bili.js
-
+13
+14
+# ～ B站大会员（2022-03-17）@ddgksf2013
+15
+^http[s]?:\/\/((app|api)\.(\w{2,15})?\.(com|cn|net|org)).*(playurl|player|reply)?\.(v3|v2|v1)\.(View|Reply|Play(URL|View|Conf)).*$ url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Bili.js
+16
+17
 [mitm] 
-
-hostname = *
-
+18
+19
+hostname=app.bilibili.com, grpc.biliapi.net,*.biliapi.net,app.bilibili.com,api.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,dataflow.biliapi.com,124.239.240.*,101.89.57.66, 218.94.210.66,240e:b1:9801:206:11:0:0:*
 
 *******************************/
 
