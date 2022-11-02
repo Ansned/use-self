@@ -8,8 +8,7 @@
 *******************************
 [rewrite_local]
 
-^https:\/\/app\.bilibili\.com\/bilibili\.app\.wall\.v1\.Wall\/RuleInfo url script-request-header https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Tips/bili_cookie_catch.js
-
+^https:\/\/app\.bilibili\.com\/bilibili\.app\.wall\.v1\.Wall\/RuleInfo url script-request-header https://raw.githubusercontent.com/Ansned/use-self/main/Script/Bilibili/bilibili_ck.js
 [mitm]
 
 hostname= app.bilibili.com
