@@ -9,7 +9,7 @@
 https://mall.zuoyebang.com/mall/goods/audio/voice/list?audioId=\d+ url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/zyb.js
 https://apivip.zybang.com/vipols/vip/viphomev1?.+ url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/zyb.js
 
-hostname = mall.zuoyebang.com,apivip.zuoyebang.com
+hostname = mall.zuoyebang.com,apivip.zybang.com
 
 ***********************/
 
