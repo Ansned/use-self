@@ -3,14 +3,16 @@
 
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com,buy.itunes.apple.com,pushserv.airapps.co, accounts.agenda.com,dayone.app,backend.getdrafts.com, *.kuwo.cn, *.lrts.me,ch.sleepcycle.com,callrecorder.icamscanner.com,flomoapp.com,*.meiyan.com,*.meitu.com
+hostname = %APPEND% api.revenuecat.com,buy.itunes.apple.com,pushserv.airapps.co, accounts.agenda.com,dayone.app,backend.getdrafts.com, *.kuwo.cn, *.lrts.me,ch.sleepcycle.com,callrecorder.icamscanner.com,flomoapp.com,*.meiyan.com,*.meitu.com,ars.alar.my,api.getmimo.com
 [Script]
-Pro = type=http-response,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers\/(\$RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/revenuecat.js
-Receipt = type=http-response,pattern=https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/verifyReceipt.js
-AgendaPro = type=http-response,pattern= ^https://accounts.agenda.com/users/.*/license,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Agenda.js
-DayOne = type=http-response,pattern= ^https:\/\/dayone\.app\/api\/v2\/users,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Ansned/use-self/main/Script/dayone.js
+Pro = type=http-response,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers\/(\$RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/revenuecat.js
+Receipt = type=http-response,pattern=https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/verifyReceipt.js
+AgendaPro = type=http-response,pattern= ^https://accounts.agenda.com/users/.*/license,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Agenda.js
+DayOne = type=http-response,pattern= ^https:\/\/dayone\.app\/api\/v2\/users,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/dayone.js
 酷我音乐 = type=http-response,pattern=https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js,script-update-interval=0
 通话录音 = type=http-response,pattern=https://callrecorder.icamscanner.com/user/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/thly.js,script-update-interval=0
-sleepcycle = type=http-response,pattern=https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/sleepcycle.js,script-update-interval=0
-flomo = type=http-response,pattern=^https://flomoapp.com/api/v1/user/me,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Ansned/use-self/main/Script/flomo.js,script-update-interval=0 
-美颜相机VIP = type=http-response,pattern=^https://.*.mei(yan|tu).com\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/myCamera.js
+sleepcycle = type=http-response,pattern=https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/sleepcycle.js,script-update-interval=0
+flomo = type=http-response,pattern=^https://flomoapp.com/api/v1/user/me,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/flomo.js,script-update-interval=0 
+美颜相机VIP = type=http-response,pattern=^https://.*.mei(yan|tu).com\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/myCamera.js
+mimo = type=http-response,pattern=^https://api.getmimo.com/v1/subscriptions,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/mimo.js,script-update-interval=0 
+Alarmy = type=http-response,pattern=^https://ars.alar.my/api/v2/user/sync,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/alarmy.js,script-update-interval=0 
