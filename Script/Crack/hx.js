@@ -15,7 +15,7 @@ TG频道群：https://t.me/py996
 
 [rewrite_local]
 
-^https:\/\/api\.shaolinzen\.com\/user\/v1\/info url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/hx.js
+^https:\/\/api\.shaolinzen\.com\/user\/v1\/info url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/hx.js
 
 [mitm] 
 
