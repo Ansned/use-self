@@ -14,7 +14,7 @@ TG频道群：https://t.me/py
 *******************************
 [rewrite_local]
 
-^https:\/\/www\.evestudio\.cn\/todoList\/getDetailUser url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/ToDo.js
+^https:\/\/www\.evestudio\.cn\/todoList\/getDetailUser url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/ToDo.js
 [mitm] 
 
 hostname = www.evestudio.cn
