@@ -15,7 +15,7 @@ TG频道群：https://t.me/py996
 
 [rewrite_local]
 
-^https:\/\/api\.gotokeep\.com url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/keep.js
+^https:\/\/api\.gotokeep\.com url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/keep.js
 
 [mitm] 
 
