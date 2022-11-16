@@ -3,10 +3,10 @@
 Draft解锁--Ansned
 
 [rewrite_local]
-^https://backend.getdrafts.com/api/v1/verification/verify_receipt url script-response-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Drafts.js
+^https://backend.getdrafts.com/api/v1/verification/verify_receipt url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Drafts.js
 
 [mitm] 
-hostname = %APPEND% backend.getdrafts.com
+hostname = backend.getdrafts.com
 
 ***/
 
