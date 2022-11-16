@@ -2,7 +2,7 @@
 dayone日记高级版2022--Eric
 
 [rewrite_local]
-^https:\/\/dayone\.app\/api\/v2\/users url script-response-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/dayone.js
+^https:\/\/dayone\.app\/api\/v2\/users url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/dayone.js
 
 [mitm] 
 hostname = %APPEND% dayone.app
