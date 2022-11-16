@@ -15,7 +15,7 @@ TG频道群：https://t.me/py996
 
 [rewrite_local]
 
-^https:\/\/getway-plan\.abuddz\.com\/api\/sync\/putNeedUpdateData url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/fyjh.js
+^https:\/\/getway-plan\.abuddz\.com\/api\/sync\/putNeedUpdateData url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/fyjh.js
 [mitm] 
 
 hostname = getway-plan.abuddz.com
