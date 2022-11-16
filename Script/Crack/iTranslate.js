@@ -2,7 +2,7 @@
 itranslate修复Pro--Eric转载注明出处
 [rewrite_local]
 
-https://ssl-api.itranslateapp.com/accounts/v4/subscriptions/verify/ios url script-request-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/iTranslate.js
+https://ssl-api.itranslateapp.com/accounts/v4/subscriptions/verify/ios url script-request-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/iTranslate.js
 
 [mitm] 
 
