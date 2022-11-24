@@ -1,0 +1,13 @@
+#name=Musixmatch
+scriptings:
+  - http_response:
+      name: Musixmatch.js
+      script_url: >-
+        https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Musixmatch.js
+      match: >-
+        https://apic.musixmatch.com/ws/1.1/config.get
+      body_required: true
+      timeout: 60
+mitm:
+  hostnames:
+    - 'apic.musixmatch.com'
