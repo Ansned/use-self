@@ -1,0 +1,42 @@
+#!name=
+#!desc=
+#!homepage=
+#!author=
+#!icon=
+
+[Script]
+
+http-response  ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers\/(\$RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$ script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/revenuecat.js,requires-body=1,max-size=0, tag=Pro 
+http-request  ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers\/(\$RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+)) script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/bytq.js,requires-body=0,max-size=0,script-update-interval=0, tag=RC 
+http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/test.js,requires-body=1,max-size=0, tag=Receipt 
+http-response ^https://firebaseremoteconfig.googleapis.com/v1/projects/filebox-ac299/apps/.* script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/projects.js,requires-body=1,max-size=0, tag=projects 
+http-response ^https://.*.mei(yan|tu).com\/.* script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/myCamera.js,requires-body=1,max-size=0, tag=美颜相机VIP 
+http-response ^ https://mobile.flightradar24.com/mobile/(user-session|subscribe) script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/flightradar24.js,requires-body=1,max-size=0, tag=flightradar24高级解锁 
+http-response  ^https://accounts.agenda.com/users/.*/license script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Agenda.js,requires-body=1,max-size=0, tag=AgendaPro 
+http-response  ^https:\/\/dayone\.app\/api\/v2\/users script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/dayone.js,requires-body=1,max-size=0, tag=DayOne 
+http-response  ^https://backend.getdrafts.com/api/v1/verification/verify_receipt script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Drafts.js,requires-body=1,max-size=0, tag=灵感足迹高级解锁 
+http-response   https://api.effie.(co|pro)/api/v1/user/member script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/effie.js,requires-body=1,max-size=0, tag=effie解锁订阅 
+http-response https://ssl-api.itranslateapp.com/accounts/v4/subscriptions/verify/ios script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/iTranslate.js,requires-body=1,max-size=0, tag=itranslatePro 
+http-response https://qianji.xxoojoke.com/vip/configios script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/qianji.js,requires-body=1,max-size=0, tag=钱迹 
+http-response ^https?:\/\/restore-access\.indream\.app\/restoreAccess script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/nicegram.js,requires-body=1,max-size=0,script-update-interval=0, tag=Nicegram 
+http-response https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js,requires-body=1,max-size=0,script-update-interval=0, tag=酷我音乐 
+http-response https://app.xunjiepdf.com/api/v4/memprofile script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/yyfyq.js,requires-body=1,max-size=0,script-update-interval=0, tag=语音翻译器
+http-response https://ssl-api.itranslateapp.com/accounts/v4/subscriptions/verify/ios script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/itranslate.js,requires-body=1,max-size=0,script-update-interval=0, tag=itranslate翻译 
+http-response https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$) script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/sleepcycle.js,requires-body=1,max-size=0,script-update-interval=0, tag=sleepcycle 
+http-response https://mobile-api.adguard.com/api/2.0/ios_validate_receipt/.* script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/adguard.js,requires-body=1,max-size=0,script-update-interval=0, tag=adguard 
+http-response ^https://api2.tophub.app/account/sync script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/jinrirebang.js,requires-body=1,max-size=0,script-update-interval=0 , tag=今日热榜 
+http-response ^https://.*.flownow.cn/v\d.\d.0/(.*|user.info) script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/flow.js,requires-body=1,max-size=0,script-update-interval=0 , tag=flow 
+http-response ^https://flomoapp.com/api/v1/user/me script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/flomo.js,requires-body=1,max-size=0,script-update-interval=0 , tag=flomo 
+http-response ^https://api.getmimo.com/v1/subscriptions script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/mimo.js,requires-body=1,max-size=0,script-update-interval=0 , tag=mimo 
+http-response ^https://api.apphud.com/v1/(customers|subscriptions)$ script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/apphud.js,requires-body=1,max-size=0,script-update-interval=0 , tag=apphud 
+http-response ^https://api-production.endel.io/v4/call script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/endel.js,requires-body=1,max-size=0,script-update-interval=0 , tag=endel 
+http-response ^https://ars.alar.my/api/v2/user/sync script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/alarmy.js,requires-body=1,max-size=0,script-update-interval=0 , tag=Alarmy 
+http-response ^https://rdp.duetdisplay.com/v1/users/validateReceipt script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/duet.js,requires-body=1,max-size=0,script-update-interval=0 , tag=duet 
+http-response ^https://medi.dxzzy321.top/api/rest/commerce/integrate/vip/perform script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/vivacut.js,requires-body=1,max-size=0,script-update-interval=0 , tag=vivacut 
+http-response ^https://api.faceapp.io/api/v3.3/auth/user/credentials script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/faceapp.js,requires-body=1,max-size=0,script-update-interval=0 , tag=faceapp 
+http-response ^https://api-weather.andy.works/v1/ script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/habits.js,requires-body=1,max-size=0,script-update-interval=0 , tag=habits 
+http-response ^https://cocorus-api.excite.co.jp/v2/users/me script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/cocorus.js,requires-body=1,max-size=0,script-update-interval=0 , tag=cocorus 
+
+[MITM]
+
+hostname = revenuecat.com,buy.itunes.apple.com,api.apphud.com,api-weather.andy.works,api.faceapp.io,app.xunjiepdf.com,*.flownow.cn,api2.tophub.app,cocorus-api.excite.co.jp,rdp.duetdisplay.com,ars.alar.my,api.getmimo.com,medi.dxzzy321.top,*.endel.io,ch.sleepcycle.com,callrecorder.icamscanner.com,ssl-api.itranslateapp.com,mobile-api.adguard.com,*.googleapis.com,notability.com,mobile.flightradar24.com, *.meiyan.com,*.meitu.com,accounts.agenda.com,dayone.app,backend.getdrafts.com,api.effie.pro,api.effie.co,ssl-api.itranslateapp.com,pushserv.airapps.co,qianji.xxoojoke.com,restore-access.indream.app
