@@ -1,0 +1,16 @@
+name: 
+desc: 
+http:
+  script:
+    - match: https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user
+      name: bdcloud.js
+      type: response
+      require-body: true
+      timeout: 30
+  mitm:
+    - "pan.baidu.com"
+
+script-providers:
+  bdcloud.js:
+    url: https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/bdcloud.js
+    interval: 86400
