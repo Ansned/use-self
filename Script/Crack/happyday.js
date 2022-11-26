@@ -9,7 +9,7 @@ obj.subscriber.entitlements = {
     }
 },
 obj.subscriber.subscriptions ={
-      "happy_449_1y"{
+      "happy_449_1y":{
               "billing_issues_detected_at":null,
               "expires_date":"2029-05-26T05:05:04Z",
               "is_sandbox":false,
