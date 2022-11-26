@@ -1,0 +1,16 @@
+name: Musixmatch 
+desc: 解锁订阅
+http:
+  script:
+    - match: https://apic.musixmatch.com/ws/1.1/config.get
+      name: Musixmatch.js
+      type: response
+      require-body: true
+      timeout: 30
+  mitm:
+    - "apic.musixmatch.com"
+
+script-providers:
+  Musixmatch.js:
+    url: https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Musixmatch.js
+    interval: 86400
