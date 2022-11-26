@@ -1,4 +1,4 @@
-name:百度网盘
+name: 百度网盘
 desc: 百度云解锁倍速 
 http:
   script:
