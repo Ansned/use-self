@@ -2,7 +2,7 @@
 #!desc=去除开屏广告及软件优化
 #!homepage=
 #!author=@ddgksf2013
-#!icon=
+#!icon= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
 
 [Rewrite]
 
