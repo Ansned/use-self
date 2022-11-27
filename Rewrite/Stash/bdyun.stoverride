@@ -1,5 +1,5 @@
 name: 百度云盘
-desc: 
+desc: 解锁倍速
 http:
   script:
     - match: https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user
@@ -8,7 +8,6 @@ http:
       require-body: true
       timeout: 30
   mitm:
-    - "pan.baidu.com"
     - "pan.baidu.com"
 
 script-providers:
