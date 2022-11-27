@@ -1,0 +1,13 @@
+#!name=Happy:Day
+#!desc=解锁订阅
+#!homepage=
+#!author=Ansned
+#!icon=
+
+[Script]
+
+http-response https://api.revenuecat.com/v1/(receipts|subscribers)/* script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/dsr.js, requires-body=true, timeout=10, tag=dsr
+
+[MITM]
+
+hostname = api.revenuecat.com
