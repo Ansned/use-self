@@ -1,16 +1,17 @@
-name: 百度网盘
-desc: 百度云解锁倍速 
+name: 百度云盘
+desc: 
 http:
   script:
-    - match: https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user
-      name: bdcloud.js
+    - match: https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user
+      name: BaiduCloud.js
       type: response
       require-body: true
       timeout: 30
   mitm:
     - "pan.baidu.com"
+    - "pan.baidu.com"
 
 script-providers:
-  bdcloud.js:
-    url: https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/bdcloud.js
+  BaiduCloud.js:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
     interval: 86400
