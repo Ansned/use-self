@@ -1,8 +1,9 @@
 /*
-dayone日记高级版2022--Eric
+dayone 解锁
 
 [rewrite_local]
-^https:\/\/dayone\.app\/api\/v2\/users url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/dayone.js
+#dayone
+^https:\/\/dayone\.app\/api\/(users|v2\/users\/(account-status|receipt))$ url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/dayone.js
 
 [mitm] 
 hostname = dayone.app
