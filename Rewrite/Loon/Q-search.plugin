@@ -4,7 +4,7 @@
 #!author=
 #!icon=
 
-[Rewrite]
+[Url Rewrite]
 
 # wx    xxx (微信)
 ^https:\/\/duckduckgo.com\/\?q=wx\+([^&]+).+ 302 https://weixin.sogou.com/weixinwap?query=$1
@@ -46,3 +46,7 @@
 ^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ 302 https://greasyfork.org/zh-CN/scripts?q=$1
 #     xxx (无指令默认为百度搜索)
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ 302 https://www.baidu.com/s?wd=$1
+
+[MITM]
+hostname = duckduckgo.com
+
