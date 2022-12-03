@@ -1,0 +1,48 @@
+#!name= Q-search
+#!desc= 需要将 Safari 浏览器的搜索引擎设置为 duckduckgo
+#!homepage=
+#!author=
+#!icon=
+
+[Rewrite]
+
+# wx    xxx (微信)
+^https:\/\/duckduckgo.com\/\?q=wx\+([^&]+).+ 302 https://weixin.sogou.com/weixinwap?query=$1
+# gh    xxx (GitHub)
+^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ 302 https://github.com/search?q=$1
+# wb    xxx (微博)
+^https:\/\/duckduckgo.com\/\?q=wb\+([^&]+).+ 302 https://s.weibo.com/weibo/$1
+# us  (切换至美国区)
+^https:\/\/duckduckgo.com\/\?q=us&.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=us&urlDesc=
+# cn  (切换至中国区)
+^https:\/\/duckduckgo.com\/\?q=cn&.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc=
+# tw  (切换至台湾区)
+^https:\/\/duckduckgo.com\/\?q=tw&.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tw&urlDesc=
+# tr  (切换至土耳其区)
+^https:\/\/duckduckgo.com\/\?q=tr&.+ 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc=
+# yt  xxx (YouTube)
+^https:\/\/duckduckgo.com\/\?q=yt\+([^&]+).+ 302 https://www.youtube.com/results?search_query=$1
+# bli xxx (哔哩哔哩)
+^https:\/\/duckduckgo.com\/\?q=bli\+([^&]+).+ 302 https://m.bilibili.com/search?keyword=$1
+# tre xxx (Google 译至英)
+^https:\/\/duckduckgo.com\/\?q=tre\+([^&]+).+ 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1
+# trj xxx (Google 译至日)
+^https:\/\/duckduckgo.com\/\?q=trj\+([^&]+).+ 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1
+# trc xxx (Google 译至中)
+^https:\/\/duckduckgo.com\/\?q=trc\+([^&]+).+ 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
+# db    xxx (豆瓣)
+^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ 302 https://m.douban.com/search/?query=$1
+# tm    xxx (TMDB)
+^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ 302 https://www.themoviedb.org/search?query=$1
+# zh    xxx (知乎)
+^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ 302 http://www.zhihu.com/search?q=$1
+#   gg  xxx （Google）
+^https:\/\/duckduckgo.com\/\?q=gg\+([^&]+).+ 302 https://www.google.com/search?q=$1
+# bi  xxx (必应)
+^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ 302 https://cn.bing.com/search?q=$1
+# gi  xxx (Google 图片)
+^https:\/\/duckduckgo.com\/\?q=gi\+([^&]+).+ 302 https://www.google.com/search?&tbm=isch&q=$1
+# yh  xxx (油猴搜索)
+^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ 302 https://greasyfork.org/zh-CN/scripts?q=$1
+#     xxx (无指令默认为百度搜索)
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ 302 https://www.baidu.com/s?wd=$1
