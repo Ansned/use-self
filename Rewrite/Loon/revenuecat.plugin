@@ -1,23 +1,36 @@
+#!name=App 解锁合集
+#!desc=作者 Eric 
+#!homepage=
+#!author=
+#!icon=
+
 [Script]
+
 # Pro
-http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers\/(\$RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$ script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/revenuecat.js,requires-body=true,timeout=10,tag=Pro
+http-response ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$ script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/revenuecat.js, requires-body=true, timeout=10, tag=revenuecat
 # Receipt
-http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/verifyReceipt.js,requires-body=true,timeout=10,tag=Receipt
+http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/test.js, requires-body=true, timeout=10, tag=test
 # Agenda
-http-response ^https://accounts.agenda.com/users/.*/license script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Agenda.js,requires-body=true,timeout=10,tag=,requires-body=true,timeout=10,tag=Agenda
+http-response ^https://accounts.agenda.com/users/./license script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Agenda.js, requires-body=true, timeout=10, tag=Agenda
 # dayone
-http-response ^https:\/\/dayone\.app\/api\/v2\/users script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/dayone.js,requires-body=true,timeout=10,tag=dayone
-# kuwo
-http-response https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js,requires-body=true,timeout=10,tag=酷我
-# 通话录音
-http-response https://callrecorder.icamscanner.com/user/info script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/thly.js,requires-body=true,timeout=10,tag=通话录音
+http-response ^https:\/\/dayone\.app\/api\/(users|v2\/users\/(account-status|receipt))$ script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/dayone.js, requires-body=true, timeout=10, tag=dayone
+# draft
+http-response ^https://backend.getdrafts.com/api/v1/verification/verify_receipt script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Drafts.js, requires-body=true, timeout=10, tag=Drafts
+# kuwo 
+http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js, requires-body=true, timeout=10, tag=kw
 # sleepcycle
-http-response https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$) script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/sleepcycle.js,requires-body=true,timeout=10,tag=sleepcycle
-# flomo
-http-response ^https://flomoapp.com/api/v1/user/me script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/flomo.js,requires-body=true,timeout=10,tag=flomo
+http-response https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$) script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/sleepcycle.js, requires-body=true, timeout=10, tag=sleepcycle
 # meiyan
-http-response ^https://.*.mei(yan|tu).com\/.* script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/myCamera.js,requires-body=true,timeout=10,tag=美颜相机
+http-response ^https://.*.mei(yan|tu).com\/.* script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/myCamera.js, requires-body=true, timeout=10, tag=myCamera
+#  mimo
+http-response ^https://api.getmimo.com/v1/subscriptions script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/mimo.js, requires-body=true, timeout=10, tag=mimo
+#  alarmy 
+http-response ^https://ars.alar.my/api/v2/user/sync script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/alarmy.js, requires-body=true, timeout=10, tag=alarmy
+#  猫头鹰文件
+http-response ^https://www.skyjos.cn:58080/ws/(loadaccountinfo|validate) script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/mty.js, requires-body=true, timeout=10, tag=mty
+#  vivacut
+http-response ^https://medi.dxzzy321.top/api/rest/commerce/integrate/vip/perform^https://medi.dxzzy321.top/api/rest/commerce/integrate/vip/perform script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/vivacut.js, requires-body=true, timeout=10, tag=vivacut
 
 [MITM]
 
-hostname = api.revenuecat.com,buy.itunes.apple.com,pushserv.airapps.co, accounts.agenda.com,dayone.app,backend.getdrafts.com, *.kuwo.cn, *.lrts.me,ch.sleepcycle.com,callrecorder.icamscanner.com,flomoapp.com,*.meiyan.com,*.meitu.com,api.getmimo.com,ars.alar.my
+hostname = api.revenuecat.com, buy.itunes.apple.com, pushserv.airapps.co, accounts.agenda.com, dayone.app, backend.getdrafts.com, *.kuwo.cn, *.lrts.me, ch.sleepcycle.com, callrecorder.icamscanner.com, *.meiyan.com, *.meitu.com, api.getmimo.com, ars.alar.my, www.skyjos.cn:58080, medi.dxzzy321.top
