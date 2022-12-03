@@ -15,7 +15,7 @@ TG频道群：https://t.me/py
 
 [rewrite_local]
 
-^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/bdwk.js
+^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo url script-response-body https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/bdwk.js
 
 [mitm]
 
