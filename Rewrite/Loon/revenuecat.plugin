@@ -7,29 +7,29 @@
 [Script]
 
 # Pro
-http-response ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$ script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/revenuecat.js, requires-body=true, timeout=10, tag=revenuecat
+http-response ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$ script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/revenuecat.js, requires-body=true, timeout=10, tag=revenuecat
 # Receipt
-http-response https://buy.itunes.apple.com/verifyReceipt script-path= https://raw.githubusercontent.com/Ansned/use-self/main/Rewrite/Loon/revenuecat.plugin?token=GHSAT0AAAAAAB36QVWV6RZXWFHZNVPJGHN2Y4LQA5A, requires-body=true, timeout=10, tag=test
+http-response https://buy.itunes.apple.com/verifyReceipt script-path= https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Rewrite/Loon/revenuecat.plugin, requires-body=true, timeout=10, tag=test
 # Agenda
-http-response ^https://accounts.agenda.com/users/./license script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Agenda.js, requires-body=true, timeout=10, tag=Agenda
+http-response ^https://accounts.agenda.com/users/./license script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Agenda.js, requires-body=true, timeout=10, tag=Agenda
 # dayone
-http-response ^https:\/\/dayone\.app\/api\/(users|v2\/users\/(account-status|receipt))$ script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/dayone.js, requires-body=true, timeout=10, tag=dayone
+http-response ^https:\/\/dayone\.app\/api\/(users|v2\/users\/(account-status|receipt))$ script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/dayone.js, requires-body=true, timeout=10, tag=dayone
 # draft
-http-response ^https://backend.getdrafts.com/api/v1/verification/verify_receipt script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Drafts.js, requires-body=true, timeout=10, tag=Drafts
+http-response ^https://backend.getdrafts.com/api/v1/verification/verify_receipt script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Drafts.js, requires-body=true, timeout=10, tag=Drafts
 # kuwo 
-http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js, requires-body=true, timeout=10, tag=kw
+http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* script-path=https://Ansned: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@raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js, requires-body=true, timeout=10, tag=kw
 # sleepcycle
-http-response https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$) script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/sleepcycle.js, requires-body=true, timeout=10, tag=sleepcycle
+http-response https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$) script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/sleepcycle.js, requires-body=true, timeout=10, tag=sleepcycle
 # meiyan
-http-response ^https://.*.mei(yan|tu).com\/.* script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/myCamera.js, requires-body=true, timeout=10, tag=myCamera
+http-response ^https://.*.mei(yan|tu).com\/.* script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/myCamera.js, requires-body=true, timeout=10, tag=myCamera
 #  mimo
-http-response ^https://api.getmimo.com/v1/subscriptions script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/mimo.js, requires-body=true, timeout=10, tag=mimo
+http-response ^https://api.getmimo.com/v1/subscriptions script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/mimo.js, requires-body=true, timeout=10, tag=mimo
 #  alarmy 
-http-response ^https://ars.alar.my/api/v2/user/sync script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/alarmy.js, requires-body=true, timeout=10, tag=alarmy
+http-response ^https://ars.alar.my/api/v2/user/sync script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/alarmy.js, requires-body=true, timeout=10, tag=alarmy
 #  猫头鹰文件
-http-response ^https://www.skyjos.cn:58080/ws/(loadaccountinfo|validate) script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/mty.js, requires-body=true, timeout=10, tag=mty
+http-response ^https://www.skyjos.cn:58080/ws/(loadaccountinfo|validate) script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/mty.js, requires-body=true, timeout=10, tag=mty
 #  vivacut
-http-response ^https://medi.dxzzy321.top/api/rest/commerce/integrate/vip/perform^https://medi.dxzzy321.top/api/rest/commerce/integrate/vip/perform script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/vivacut.js, requires-body=true, timeout=10, tag=vivacut
+http-response ^https://medi.dxzzy321.top/api/rest/commerce/integrate/vip/perform script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/vivacut.js, requires-body=true, timeout=10, tag=vivacut
 
 [MITM]
 
