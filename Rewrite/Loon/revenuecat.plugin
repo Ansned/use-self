@@ -7,7 +7,7 @@
 [Script]
 
 # Pro
-http-response ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$ script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/revenuecat.js, requires-body=true, timeout=10, tag=revenuecat
+http-response ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$ script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/revenuecat.js, requires-body=true, timeout=10, tag=revenuecat
 # Receipt
 http-response https://buy.itunes.apple.com/verifyReceipt script-path= https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Rewrite/Loon/revenuecat.plugin, requires-body=true, timeout=10, tag=test
 # Agenda
