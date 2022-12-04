@@ -6,7 +6,7 @@
 #!icon = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Icon/80px/Enpass_Password_Manager.png
 
 [Script]
-http-response ^https:\/\/license\.enpass\.io\/api\/v1\/subscription\/me script-path= https://raw.githubusercontent.com/Ansned/use-self/main/Script/Enpass.js, requires-body=true, tag=Enpass解锁, img-url=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Icon/80px/Enpass_Password_Manager.png
+http-response ^https:\/\/license\.enpass\.io\/api\/v1\/subscription\/me script-path= https:Ansned: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@//raw.githubusercontent.com/Ansned/use-self/main/Script/Enpass.js, requires-body=true, tag=Enpass解锁, img-url=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Icon/80px/Enpass_Password_Manager.png
   
 [MITM]
 hostname = license.enpass.io
