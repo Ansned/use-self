@@ -1,0 +1,17 @@
+name: pr
+desc: pr
+http:
+  script:
+    - match: ^https?:\/\/(raw|gist)\.githubusercontent.com
+      name: GithubPrivate
+      type: request
+      require-body: false
+      timeout: 30
+  mitm:
+    - "raw.githubusercontent.com"
+    - "gist.githubusercontent.com"
+
+script-providers:
+  GithubPrivate:
+    url: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/GithubPrivate/github-private-repo.js
+    interval: 86400
