@@ -9,7 +9,7 @@
 # Pro
 http-response ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$ script-path=https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/revenuecat.js, requires-body=true, timeout=10, tag=revenuecat
 # Receipt
-http-response https://buy.itunes.apple.com/verifyReceipt script-path= https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Rewrite/Loon/revenuecat.plugin, requires-body=true, timeout=10, tag=test
+http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/test.js, requires-body=true, timeout=10, tag=test
 # Agenda
 http-response ^https://accounts.agenda.com/users/./license script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Agenda.js, requires-body=true, timeout=10, tag=Agenda
 # dayone
