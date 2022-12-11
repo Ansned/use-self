@@ -1,3 +1,8 @@
+#!name=Bilibili 净化
+#!desc=哔哩哔哩去广告及标签
+
+
+
 [Url Rewrite]
 
 # ～ BiliBili_哔哩哔哩_屏蔽IP请求@ddgksf2013
