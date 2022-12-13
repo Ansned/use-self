@@ -12,7 +12,7 @@
 ^https:\/\/duckduckgo.com\/\?q=wb\+([^&]+).+ https://s.weibo.com/weibo/$1 302
 # yt  xxx (YouTube)
 ^https:\/\/duckduckgo.com\/\?q=yt\+([^&]+).+ 302 https://www.youtube.com/results?search_query=$1 302
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+yt.+ https://www.youtube.com/results?search_query=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+yt.+ 302 https://www.youtube.com/results?search_query=$1 302
 # ph  xxx (PornHub)
 ^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ https://cn.pornhub.com/video/search?search=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+ph.+ https://cn.pornhub.com/video/search?search=$1 302
