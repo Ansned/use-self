@@ -11,8 +11,8 @@
 # wb    xxx (微博)
 ^https:\/\/duckduckgo.com\/\?q=wb\+([^&]+).+ https://s.weibo.com/weibo/$1 302
 # yt  xxx (YouTube)
-^https:\/\/duckduckgo.com\/\?q=yt\+([^&]+).+ 302 https://www.youtube.com/results?search_query=$1 302
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+yt.+ 302 https://www.youtube.com/results?search_query=$1 302
+^https:\/\/duckduckgo.com\/\?q=yt\+([^&]+).+ https://www.youtube.com/results?search_query=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+yt.+ https://www.youtube.com/results?search_query=$1 302
 # ph  xxx (PornHub)
 ^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ https://cn.pornhub.com/video/search?search=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+ph.+ https://cn.pornhub.com/video/search?search=$1 302
@@ -30,7 +30,7 @@
 ^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ https://www.themoviedb.org/search?query=$1 302
 # zh    xxx (知乎)
 ^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ http://www.zhihu.com/search?q=$1 302
-#   gg  xxx （Google）
+# gg    xxx （Google）
 ^https:\/\/duckduckgo.com\/\?q=gg\+([^&]+).+ https://www.google.com/search?q=$1 302
 # bi  xxx (必应)
 ^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ https://cn.bing.com/search?q=$1 302
