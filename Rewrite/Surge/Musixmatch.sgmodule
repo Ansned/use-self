@@ -1,0 +1,12 @@
+#!name=Musixmatch
+#!desc=
+
+
+
+[Script]
+
+Musixmatch = type=http-response,pattern=https://apic.musixmatch.com/ws/1.1/config.get,requires-body=1,max-size=0,script-path=https://Ansned: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@raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/Musixmatch.js
+
+[MITM]
+
+hostname = %APPEND% apic.musixmatch.com
