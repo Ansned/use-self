@@ -10,9 +10,9 @@
 hostname = apps.risingauto.com
 
 [rewrite_local]
-^https:\/\/apps\.risingauto\.com\/api\/energy\/task\/r\/mini\/signInState\?brandCode=\d$ url script-request-header https://raw.githubusercontent.com/wf021325/qx/master/task/ffqc.js
+^https:\/\/apps\.risingauto\.com\/api\/energy\/task\/r\/mini\/signInState\?brandCode=\d$ url script-request-header https://raw.githubusercontent.com/Ansned/use-self/main/Task/ffqc.js
 [task_local]
-1 0 * * * https://raw.githubusercontent.com/wf021325/qx/master/task/ffqc.js, tag=非凡汽车小程序签到, enabled=true
+1 0 * * * https://raw.githubusercontent.com/Ansned/use-self/main/Task/ffqc.js, tag=非凡汽车小程序签到, enabled=true
 
  */
 const $ = new Env("非凡汽车");
