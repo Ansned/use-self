@@ -6,8 +6,9 @@
 *******************************
 ［Rewrite_local］
 ^https://api.revenuecat.com/.+/(receipts|subscribers/($RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$ url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/xym.js
+https://buy.itunes.apple.com/verifyReceipt url script-response-body https://raw.githubusercontent.com/Ansned/use-self/main/Script/Crack/xym.js
 ［MITM］
 
-hostname = api.revenuecat.com
+hostname = api.revenuecat.com,buy.itunes.apple.com
 
 *********************************/
